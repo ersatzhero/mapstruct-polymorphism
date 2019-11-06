@@ -1,0 +1,14 @@
+package dto;
+
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.ToString;
+import lombok.experimental.SuperBuilder;
+
+@SuperBuilder
+@Getter
+@EqualsAndHashCode
+@ToString
+public abstract class VehicleDto {
+	String name;
+}
