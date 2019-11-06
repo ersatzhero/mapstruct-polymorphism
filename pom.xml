@@ -12,6 +12,7 @@
     <description>A project to show a problem that mapstruct seems to have with polymorphism</description>
 
     <properties>
+        <compiler.version>3.6.2</compiler.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
 
@@ -71,7 +72,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>${version.compiler}</version>
+                    <version>${compiler.version}</version>
                     <configuration>
                         <source>${maven.compiler.source}</source>
                         <target>${maven.compiler.target}</target>

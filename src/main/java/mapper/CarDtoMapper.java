@@ -13,7 +13,7 @@ import model.Car;
 import model.Motorbike;
 import model.Vehicle;
 
-@Mapper
+@Mapper(uses = InteriorDtoMapper.class)
 public abstract class CarDtoMapper implements Function<VehicleDto, Vehicle> {
 
 	private Map<Class<? extends VehicleDto>, Function<VehicleDto, Vehicle>> mappingFunctions = new HashMap<Class<? extends VehicleDto>,
